@@ -1,0 +1,9 @@
+{
+  "name": "florida-mutual-mortgage",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "resend": "latest"
+  }
+}

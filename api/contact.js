@@ -38,7 +38,7 @@ export default async function handler(req, res) {
     `;
 
     await resend.emails.send({
-      from: 'Florida Mutual <onboarding@resend.dev>',
+      from: 'Florida Mutual Mortgage <leads@catchyourneeds.com>',
      to: ['pagoagagus@gmail.com'],
       replyTo: email,
       subject: `New Mortgage Lead: ${name}`,

@@ -39,7 +39,7 @@ export default async function handler(req, res) {
 
     await resend.emails.send({
       from: 'Florida Mutual <onboarding@resend.dev>',
-      to: ['catchyourneeds@gmail.com'],
+     to: ['pagoagagus@gmail.com'],
       replyTo: email,
       subject: `New Mortgage Lead: ${name}`,
       html

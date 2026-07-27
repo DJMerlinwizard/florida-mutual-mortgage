@@ -1,177 +1,640 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Florida Mutual Mortgage | Smart Home Financing in Florida</title>
-  <meta name="description" content="Work directly with Gustavo A. Pagoaga and Florida Mutual Mortgage for clear guidance, responsive service, and home loan options across Florida." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>Florida Mutual Mortgage | Home Loans Made Simple</title>
+
+    <meta
+        name="description"
+        content="Florida Mutual Mortgage helps Florida homebuyers with purchase, refinance, FHA, VA, conventional, jumbo, and first-time homebuyer mortgage solutions."
+    >
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <style>
+        :root {
+            --navy: #0b1b2a;
+            --navy-hover: #17334d;
+            --blue-gray: #9fb8c4;
+            --light: #f4f7f8;
+            --accent: #6f9bad;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding-top: 90px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--navy);
+            background: #ffffff;
+        }
+
+        section {
+            scroll-margin-top: 110px;
+        }
+
+        .navbar-logo {
+            width: auto;
+            height: 58px;
+        }
+
+        .navbar-brand {
+            color: var(--navy);
+        }
+
+        .navbar-brand:hover {
+            color: var(--navy);
+        }
+
+        .btn-primary {
+            background-color: var(--navy);
+            border-color: var(--navy);
+        }
+
+        .btn-primary:hover,
+        .btn-primary:focus {
+            background-color: var(--navy-hover);
+            border-color: var(--navy-hover);
+        }
+
+        .btn-language {
+            color: var(--navy);
+            background-color: white;
+            border: 1px solid var(--navy);
+        }
+
+        .btn-language:hover,
+        .btn-language:focus {
+            color: white;
+            background-color: var(--navy);
+            border-color: var(--navy);
+        }
+
+        .hero {
+            min-height: 82vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            background:
+                linear-gradient(
+                    rgba(11, 27, 42, 0.82),
+                    rgba(11, 27, 42, 0.82)
+                ),
+                url("assets/images/hero.jpg") center center / cover no-repeat;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 800;
+            line-height: 1.05;
+        }
+
+        .hero p {
+            max-width: 760px;
+            margin: 20px auto;
+            font-size: 1.25rem;
+        }
+
+        .badge-custom {
+            color: var(--navy);
+            background-color: var(--blue-gray);
+        }
+
+        .card {
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        .section-soft {
+            background-color: var(--light);
+        }
+
+        .footer-link {
+            color: white;
+        }
+
+        .footer-link:hover {
+            color: var(--blue-gray);
+        }
+
+        @media (max-width: 767px) {
+            body {
+                padding-top: 140px;
+            }
+
+            .navbar .container {
+                gap: 10px;
+            }
+
+            .navbar-brand {
+                width: 100%;
+                justify-content: center;
+                margin-right: 0;
+            }
+
+            .navbar-brand span {
+                font-size: 0.95rem;
+            }
+
+            .navbar-logo {
+                height: 44px;
+            }
+
+            .navbar-actions {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .navbar-actions .btn {
+                padding: 0.45rem 0.65rem;
+                font-size: 0.82rem;
+            }
+
+            .hero {
+                min-height: 72vh;
+                text-align: center;
+            }
+
+            .hero-buttons {
+                display: grid;
+                gap: 12px;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <header class="site-header" id="top">
-    <nav class="nav shell">
-      <a class="brand" href="#top" aria-label="Florida Mutual Mortgage home">
-        <img src="assets/images/logo.jpg" alt="Florida Mutual Mortgage logo" />
-        <span>Florida Mutual Mortgage</span>
-      </a>
-      <button class="menu-toggle" aria-label="Open menu">☰</button>
-      <div class="nav-links">
-        <a href="#programs">Programs</a>
-        <a href="#calculator">Calculator</a>
-        <a href="#process">Process</a>
-        <a href="#realtors">Realtors</a>
-        <a href="#contact">Contact</a>
-        <a class="pill dark" href="tel:+17863684035">Call Gus</a>
-      </div>
+
+    <nav class="navbar bg-white shadow-sm fixed-top">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+
+            <a
+                class="navbar-brand fw-bold d-flex align-items-center gap-2"
+                href="#top"
+            >
+                <img
+                    src="assets/images/logo.jpg"
+                    alt="Florida Mutual Mortgage logo"
+                    class="navbar-logo"
+                >
+
+                <span>Florida Mutual Mortgage</span>
+            </a>
+
+            <div class="navbar-actions d-flex align-items-center gap-2">
+
+                <a
+                    href="https://translate.google.com/translate?sl=en&amp;tl=es&amp;u=https%3A%2F%2Fflorida-mutual-mortgage.netlify.app%2F"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-language"
+                >
+                    Español
+                </a>
+
+                <a
+                    href="#contact"
+                    class="btn btn-primary"
+                >
+                    Get Pre-Approved
+                </a>
+
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="shell hero-content reveal">
-        <p class="eyebrow">Florida mortgage guidance with a personal touch</p>
-        <h1>Home financing that feels clear, fast, and built around you.</h1>
-        <p class="hero-copy">Work directly with Gustavo A. Pagoaga and Florida Mutual Mortgage for smart loan options, clean communication, and a smoother path from application to closing.</p>
-        <div class="hero-actions">
-          <a class="pill gold" href="#contact">Start My Loan Review</a>
-          <a class="pill light" href="tel:+17863684035">Call (786) 368-4035</a>
+    <header id="top" class="hero">
+        <div class="container text-center">
+
+            <span class="badge badge-custom mb-3 p-2">
+                Florida Mortgage Solutions
+            </span>
+
+            <h1>
+                Helping Florida Families Finance Their Dream Home
+            </h1>
+
+            <p>
+                Local mortgage guidance, personalized loan options, and a
+                smoother path to homeownership with Florida Mutual Mortgage.
+            </p>
+
+            <div class="hero-buttons mt-4">
+
+                <a
+                    href="#contact"
+                    class="btn btn-primary btn-lg me-md-2"
+                >
+                    Get Started
+                </a>
+
+                <a
+                    href="tel:+17863684035"
+                    class="btn btn-light btn-lg"
+                >
+                    Call (786) 368-4035
+                </a>
+
+            </div>
         </div>
-        <div class="trust-row">
-          <div><strong>FHA • VA • Conventional</strong><span>Purchase and refinance options</span></div>
-          <div><strong>Local Florida Focus</strong><span>Guidance from start to finish</span></div>
-          <div><strong>NMLS 1255178</strong><span>Gustavo A. Pagoaga</span></div>
+    </header>
+
+    <main>
+
+        <section class="container py-5">
+            <h2 class="text-center mb-5">
+                Loan Programs
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card p-4 h-100">
+                        <h3>FHA Loans</h3>
+
+                        <p>
+                            Flexible financing options for qualified buyers
+                            with accessible down payment options.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card p-4 h-100">
+                        <h3>VA Loans</h3>
+
+                        <p>
+                            Mortgage options for eligible veterans,
+                            active-duty service members, and military families.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card p-4 h-100">
+                        <h3>Conventional Loans</h3>
+
+                        <p>
+                            Reliable mortgage solutions for primary residences,
+                            second homes, and investment properties.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card p-4 h-100">
+                        <h3>Jumbo Loans</h3>
+
+                        <p>
+                            Financing solutions for higher-value homes
+                            throughout Florida.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card p-4 h-100">
+                        <h3>Refinancing</h3>
+
+                        <p>
+                            Explore options to adjust your loan terms,
+                            lower payments, or access home equity.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card p-4 h-100">
+                        <h3>First-Time Buyers</h3>
+
+                        <p>
+                            Clear guidance through every step of the
+                            home financing process.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-soft py-5">
+            <div class="container text-center">
+
+                <h2>
+                    Why Choose Florida Mutual Mortgage?
+                </h2>
+
+                <p class="lead mt-3">
+                    Local Florida experience. Clear communication.
+                    Personalized service. Mortgage solutions built
+                    around your goals.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="container py-5">
+            <div class="row align-items-center g-4">
+
+                <div class="col-lg-6">
+                    <h2>
+                        Work With a Local Mortgage Professional
+                    </h2>
+
+                    <p class="lead">
+                        Gustavo A. Pagoaga helps clients navigate the
+                        mortgage process with straightforward guidance
+                        and responsive service.
+                    </p>
+
+                    <p>
+                        Whether you are buying your first home,
+                        refinancing, moving up, or exploring your options,
+                        Florida Mutual Mortgage is here to help you move
+                        forward with confidence.
+                    </p>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card p-4">
+
+                        <h3 class="h4">
+                            Contact Gustavo
+                        </h3>
+
+                        <p>
+                            <strong>Phone:</strong>
+
+                            <a href="tel:+17863684035">
+                                (786) 368-4035
+                            </a>
+                        </p>
+
+                        <p>
+                            <strong>Individual NMLS ID:</strong>
+                            1255178
+                        </p>
+
+                        <p>
+                            <strong>Company:</strong>
+                            Florida Mutual Mortgage Inc.
+                        </p>
+
+                        <p>
+                            <strong>Company NMLS ID:</strong>
+                            2639185
+                        </p>
+
+                        <a
+                            href="#contact"
+                            class="btn btn-primary"
+                        >
+                            Request Information
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="container py-5">
+
+            <h2 class="text-center mb-4">
+                Get Pre-Approved Today
+            </h2>
+
+            <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                class="mx-auto"
+                style="max-width: 700px;"
+            >
+
+                <input
+                    type="hidden"
+                    name="form-name"
+                    value="contact"
+                >
+
+                <p class="d-none">
+                    <label>
+                        Do not fill this out:
+                        <input name="bot-field">
+                    </label>
+                </p>
+
+                <div class="mb-3">
+                    <label for="name" class="form-label">
+                        Full Name
+                    </label>
+
+                    <input
+                        id="name"
+                        class="form-control"
+                        name="name"
+                        type="text"
+                        placeholder="Full Name"
+                        required
+                    >
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">
+                        Email Address
+                    </label>
+
+                    <input
+                        id="email"
+                        class="form-control"
+                        name="email"
+                        type="email"
+                        placeholder="Email Address"
+                        required
+                    >
+                </div>
+
+                <div class="mb-3">
+                    <label for="phone" class="form-label">
+                        Phone Number
+                    </label>
+
+                    <input
+                        id="phone"
+                        class="form-control"
+                        name="phone"
+                        type="tel"
+                        placeholder="Phone Number"
+                    >
+                </div>
+
+                <div class="mb-3">
+                    <label for="loan-type" class="form-label">
+                        Loan Type
+                    </label>
+
+                    <select
+                        id="loan-type"
+                        class="form-select"
+                        name="loan_type"
+                    >
+                        <option value="">
+                            Select Loan Type
+                        </option>
+
+                        <option value="Purchase">
+                            Purchase
+                        </option>
+
+                        <option value="Refinance">
+                            Refinance
+                        </option>
+
+                        <option value="FHA">
+                            FHA
+                        </option>
+
+                        <option value="VA">
+                            VA
+                        </option>
+
+                        <option value="Conventional">
+                            Conventional
+                        </option>
+
+                        <option value="Jumbo">
+                            Jumbo
+                        </option>
+
+                        <option value="Not Sure Yet">
+                            Not Sure Yet
+                        </option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">
+                        How can we help?
+                    </label>
+
+                    <textarea
+                        id="message"
+                        class="form-control"
+                        name="message"
+                        rows="5"
+                        placeholder="How can we help?"
+                    ></textarea>
+                </div>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary btn-lg w-100"
+                >
+                    Request Information
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+
+            <h2 class="h4">
+                Florida Mutual Mortgage
+            </h2>
+
+            <address>
+                118 NW 95th Lane<br>
+                Coral Springs, FL 33071
+            </address>
+
+            <p>
+                <strong>Phone:</strong>
+
+                <a
+                    href="tel:+17863684035"
+                    class="footer-link text-decoration-none"
+                >
+                    (786) 368-4035
+                </a>
+
+                <br>
+
+                <strong>Loan Originator:</strong>
+                Gustavo A. Pagoaga
+
+                <br>
+
+                <strong>Individual NMLS ID:</strong>
+                1255178
+
+                <br>
+
+                <strong>Company NMLS ID:</strong>
+                2639185
+            </p>
+
+            <hr>
+
+            <small>
+                Equal Housing Opportunity.
+
+                <br><br>
+
+                All loans are subject to credit approval, underwriting
+                guidelines, and program availability. Rates, terms,
+                and loan programs are subject to change without notice.
+
+                <br><br>
+
+                This website is for informational purposes only and does
+                not constitute a commitment to lend.
+
+                <br><br>
+
+                Verify licensing through
+
+                <a
+                    href="https://www.nmlsconsumeraccess.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer-link"
+                >
+                    NMLS Consumer Access
+                </a>.
+
+                <br><br>
+
+                © 2026 Florida Mutual Mortgage. All Rights Reserved.
+            </small>
+
         </div>
-      </div>
-    </section>
+    </footer>
 
-    <section class="section shell split reveal">
-      <div>
-        <p class="eyebrow navy">Why Florida Mutual</p>
-        <h2>A mortgage experience that does not feel like a maze.</h2>
-        <p>Buying or refinancing a home is a big move. You deserve a professional who explains the options, answers quickly, and helps you avoid surprises before they become problems.</p>
-      </div>
-      <div class="feature-grid">
-        <article><span>01</span><h3>Clear answers</h3><p>Understand your options before you commit.</p></article>
-        <article><span>02</span><h3>Responsive guidance</h3><p>Direct communication throughout the process.</p></article>
-        <article><span>03</span><h3>Florida expertise</h3><p>Local insight for Florida buyers and homeowners.</p></article>
-        <article><span>04</span><h3>Loan options</h3><p>Purchase, refinance, FHA, VA, Conventional, and Jumbo.</p></article>
-      </div>
-    </section>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    ></script>
 
-    <section class="section soft" id="programs">
-      <div class="shell reveal">
-        <div class="section-head">
-          <p class="eyebrow navy">Loan programs</p>
-          <h2>Financing options for different stages of life.</h2>
-        </div>
-        <div class="cards">
-          <article class="card"><h3>FHA Loans</h3><p>Flexible options for qualified buyers seeking accessible down payment choices.</p></article>
-          <article class="card"><h3>VA Loans</h3><p>For eligible veterans, active-duty service members, and military families.</p></article>
-          <article class="card"><h3>Conventional</h3><p>Reliable financing for primary homes, second homes, and investments.</p></article>
-          <article class="card"><h3>Jumbo</h3><p>Solutions for higher-value homes across Florida.</p></article>
-          <article class="card"><h3>Refinance</h3><p>Explore payment, term, cash-flow, and home equity options.</p></article>
-          <article class="card"><h3>First-Time Buyers</h3><p>Step-by-step support from pre-approval to closing day.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section shell calculator-wrap reveal" id="calculator">
-      <div class="calc-copy">
-        <p class="eyebrow navy">Quick payment estimate</p>
-        <h2>Run a fast monthly payment snapshot.</h2>
-        <p>This is a simple estimate for planning. Taxes, insurance, HOA, mortgage insurance, rate, and loan terms can change the final payment.</p>
-      </div>
-      <div class="calculator">
-        <label>Home Price <input id="price" type="number" value="400000"></label>
-        <label>Down Payment <input id="down" type="number" value="14000"></label>
-        <label>Interest Rate % <input id="rate" type="number" step="0.01" value="6.75"></label>
-        <label>Years <input id="years" type="number" value="30"></label>
-        <button class="pill dark full" id="calculate" type="button">Calculate Payment</button>
-        <div class="payment-box"><span>Estimated principal & interest</span><strong id="payment">$2,505/mo</strong></div>
-      </div>
-    </section>
-
-    <section class="section dark-section" id="process">
-      <div class="shell reveal">
-        <p class="eyebrow gold-text">The process</p>
-        <h2>Simple steps. Better communication.</h2>
-        <div class="steps">
-          <div><span>1</span><h3>Tell us your goal</h3><p>Purchase, refinance, move-up, first home, or exploring options.</p></div>
-          <div><span>2</span><h3>Review your options</h3><p>Gus helps you understand programs that may fit your situation.</p></div>
-          <div><span>3</span><h3>Move toward closing</h3><p>Stay informed with clear next steps from application to closing.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section shell split reveal" id="realtors">
-      <div>
-        <p class="eyebrow navy">For Realtors</p>
-        <h2>A lending partner who helps protect your transaction.</h2>
-        <p>Florida Mutual Mortgage helps Realtors keep buyers informed, prepared, and moving forward with practical mortgage guidance and responsive communication.</p>
-      </div>
-      <div class="quote-card">
-        <p>“Clean communication, fast follow-up, and clear financing guidance can be the difference between a deal that stalls and a deal that closes.”</p>
-        <strong>Florida Mutual Mortgage</strong>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact">
-      <div class="shell contact-grid reveal">
-        <div>
-          <p class="eyebrow gold-text">Start here</p>
-          <h2>Request a loan review with Gus.</h2>
-          <p>Submit your information and someone from Florida Mutual Mortgage will follow up. For faster help, call directly.</p>
-          <div class="contact-card">
-            <strong>Gustavo A. Pagoaga</strong>
-            <span>Individual NMLS ID: 1255178</span>
-            <span>Florida Mutual Mortgage Inc.</span>
-            <span>Company NMLS ID: 2639185</span>
-            <a href="tel:+17863684035">(786) 368-4035</a>
-          </div>
-        </div>
-        <form id="leadForm" class="lead-form">
-          <input name="name" placeholder="Full name" required>
-          <input name="email" type="email" placeholder="Email address" required>
-          <input name="phone" placeholder="Phone number" required>
-          <select name="loanType">
-            <option value="">What are you interested in?</option>
-            <option>Purchase</option>
-            <option>Refinance</option>
-            <option>FHA</option>
-            <option>VA</option>
-            <option>Conventional</option>
-            <option>Jumbo</option>
-            <option>Not sure yet</option>
-          </select>
-          <textarea name="message" rows="5" placeholder="Tell us a little about your situation"></textarea>
-          <button class="pill gold full" type="submit">Send My Request</button>
-          <p class="form-status" id="formStatus"></p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="shell footer-grid">
-      <div>
-        <img src="assets/images/logo.jpg" alt="Florida Mutual Mortgage logo" />
-        <p>Florida Mutual Mortgage Inc.<br>118 NW 95th Lane<br>Coral Springs, FL 33071</p>
-      </div>
-      <div>
-        <p><strong>Phone:</strong> <a href="tel:+17863684035">(786) 368-4035</a></p>
-        <p><strong>Loan Originator:</strong> Gustavo A. Pagoaga</p>
-        <p><strong>NMLS:</strong> 1255178 | Company NMLS: 2639185</p>
-      </div>
-    </div>
-    <div class="shell disclaimer">
-      Equal Housing Opportunity. All loans are subject to credit approval, underwriting guidelines, and program availability. Rates, terms, and loan programs are subject to change without notice. This website is for informational purposes only and does not constitute a commitment to lend. Verify licensing through <a href="https://www.nmlsconsumeraccess.org" target="_blank" rel="noopener">NMLS Consumer Access</a>. © 2026 Florida Mutual Mortgage. All rights reserved.
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
